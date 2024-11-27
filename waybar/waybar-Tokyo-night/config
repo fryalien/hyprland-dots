@@ -2,13 +2,13 @@
     "layer": "top",
     "position": "top",
     "height": 40,
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["custom/recorder", "tray", "pulseaudio", "backlight", "temperature", "cpu", "memory", "battery", "network", "custom/powermenu"],
-    "sway/mode": {
+    "hyprland/mode": {
         "format": " {}"
     },
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
         "disable-markup": false,
@@ -30,7 +30,7 @@
         "icon-size": 20,
         "spacing": 8
     },
-    "sway/window": {
+    "hyprland/window": {
         "max-length": 60,
         "tooltip": false
         // "format": "( {} )"
