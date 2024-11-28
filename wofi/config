@@ -1,5 +1,9 @@
 mode=drun
-prompt=Application
-height=90%
-width=90%
+prompt=Run
+height=95%
+width=95%
 location=center
+
+icon-theme=Oranchelo
+show-icons=true
+drun-display-format="{icon} {name}";

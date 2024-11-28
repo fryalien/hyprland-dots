@@ -1,74 +1,33 @@
 {
-  "layer": "top",
+  // GENERAL SETTINGS
+  "layer": "bottom",
+  "position": "top",
   "height": 30,
   "spacing": 5,
-  // Choose the order of the modules
+
+  // LOAD MODULES
+  "include": ["~/.config/waybar/modules.json"],
+
+  // MODULES LEFT
   "modules-left": [
     "hyprland/workspaces"
   ],
+
+  // MODULES CENTER
   "modules-center": [
-    "clock"
+    "cpu",
+    "memory"
   ],
+
+  // MODULES RIGHT
   "modules-right": [
-	"tray",
-  "custom/pacman",
-  "pulseaudio",
-  "network",
-  "battery",
-  "custom/power"
-	],
-  "hyprland/window": {
-		"separate-outputs": true
-	},
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "on-click": "activate"
-   },
-  "tray": {
-    // "icon-size": 21,
-    "spacing": 10
-   },
-	"custom/pacman": {
-		"interval": 3600,
-		"return-type": "json",
-		"exec": "pacman-updates",
-		"exec-if": "exit 0",
-		"on-click": "$TERMINAL -e paru; pkill -SIGRTMIN+8 waybar",
-		"signal": 8
-		},
-  "clock": {
-    "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%d %B, %Y  |  %H:%M}"
-  },
-  "battery": {
-    "states": {
-			"warning": 20
-      },
-    "format": "{icon}",
-			"format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
-      "format-charging": "󰂄",
-      "format-warning": "󰂃",
-		"tooltip-format": "{capacity}% capacity"
-  },
-  "network": {
-    "format-ethernet": "󰤨",
-    "format-wifi": "󰤨 {essid}",
-    "format-disconnected": "󰤭",
-		"tooltip-format": "Connected to {ipaddr}",
-		"on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
-  },
-  "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon}",
-    "format-muted": "󰖁",
-		"format-icons": {
-			"default": ["", "", "󰕾"]
-		},
-		"tooltip-format": "{volume}% volume"
-		},
-	"custom/power": {
-      "format": "󰐥",
-      "on-click": "wlogout"
-  }
+		"tray",
+    "custom/pacman",
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock",
+    "custom/power"
+  ]
+	
 }

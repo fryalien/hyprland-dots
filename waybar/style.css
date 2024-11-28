@@ -129,11 +129,6 @@ button {
     margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, reduce left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 2px;
-}
-
 #clock {
   color: @text;
   margin-left: 5px;
@@ -180,12 +175,3 @@ button {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-/* vim: ft=sass */
