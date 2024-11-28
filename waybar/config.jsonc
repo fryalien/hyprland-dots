@@ -17,15 +17,15 @@
   "battery",
   "custom/power"
 	],
-   "hyprland/window": {
-	"separate-outputs": true
+  "hyprland/window": {
+		"separate-outputs": true
 	},
-   "hyprland/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate"
    },
-   "tray": {
+  "tray": {
     // "icon-size": 21,
     "spacing": 10
    },
@@ -72,4 +72,3 @@
       "on-click": "wlogout"
   }
 }
-

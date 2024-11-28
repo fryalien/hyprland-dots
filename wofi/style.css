@@ -1,0 +1,17 @@
+#window {
+	font-size: 24px;
+	font-family: "Ubuntu Nerd Font";
+	color: white;
+	border-bottom: 3px solid grey;
+	border-radius: 5px;
+}
+
+#entry:selected {
+	background: linear (#1a1b26);
+	border-radius: 5px;
+}
+
+#input {
+	background-color: #1a1b26;
+	border-radius: 5px;
+}
