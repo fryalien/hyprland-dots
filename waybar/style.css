@@ -30,7 +30,7 @@
 @define-color rosewater #f5e0dc;
 
 * {
-    font-family: Cantarell, Symbols Nerd Font;
+    font-family: Ubuntu Nerd Font, Cantarell, Symbols Nerd Font;
     font-weight: bolder;
     font-size: 14px;
 }
@@ -42,7 +42,7 @@ window#waybar {
     transition-duration: .5s;
 }
 
-window#waybar.hidden {
+/* window#waybar.hidden {
     opacity: 0.2;
 }
 
@@ -54,15 +54,6 @@ window#waybar.solo {
     background-color: #FFFFFF;
 }
 */
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -101,77 +92,52 @@ button {
     color: @red;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-pacman,
-#custom-power,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
-    padding: 0 9px;
-    color: @text;
-    border-radius: 15px;
-    margin: 5px 0;
-}
-
-#window,
 #workspaces {
     margin: 0 4px;
 }
 
-#clock {
-  color: @text;
-  margin-left: 5px;
-}
-
-#custom-pacman {
-  color: @peach;
+#cpu {
+    margin-right: 10px;
 }
 
 #pulseaudio {
   color: @mauve;
+  margin-left: 10px;
 }
 
 #pulseaudio.muted {
   color: @surface2;
+  margin-left: 10px;
 }
 
 #network {
   color: @blue;
+  margin-left: 10px;
 }
 
 #network.disconnected {
   color: @surface2;
+  margin-left: 10px;
 }
 
 #battery {
     color: @green;
+    margin-left: 10px;
 }
 
 #battery.warning:not(.charging) {
     color: @red;
+    margin-left: 10px;
 }
+
+#clock {
+    color: @text;
+    margin-left: 10px;
+  }
 
 #custom-power {
   color: @maroon;
   margin-right: 5px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
 }
 
