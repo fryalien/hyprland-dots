@@ -1,0 +1,33 @@
+{
+  // GENERAL SETTINGS
+  "layer": "bottom",
+  "position": "top",
+  "height": 30,
+  "spacing": 5,
+
+  // LOAD MODULES
+  "include": ["~/.config/waybar/modules.json"],
+
+  // MODULES LEFT
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  // MODULES CENTER
+  "modules-center": [
+    "cpu",
+    "memory"
+  ],
+
+  // MODULES RIGHT
+  "modules-right": [
+		"tray",
+    "custom/pacman",
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock",
+    "custom/power"
+  ]
+	
+}
